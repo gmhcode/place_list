@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:place_list/providers/great_places.dart';
 import 'package:place_list/screens/add_place_screen.dart';
 import 'package:place_list/screens/places_list_screen.dart';
+import 'package:place_list/widgets/location_input.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
           accentColor: Colors.amber,
         ),
         home: PlacesListScreen(),
+        // home: LocationInput(),
         routes: {
           AddPlaceScreen.routName: (ctx) => AddPlaceScreen(),
         },
